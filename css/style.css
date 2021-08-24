@@ -1,0 +1,10 @@
+/* import fonts from css file */
+
+@import url(./fonts.css);  
+
+/* start nav */
+
+header-area .main-menu .navbar .navbar-brand {
+    padding: 0 2rem 0 5rem;
+}
+/* end nav */
