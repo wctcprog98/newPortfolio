@@ -32,14 +32,14 @@
 }
 
 .button.primary-button::after,
-.button.button.secondary-button::after {
+.button.secondary-button::after {
   position: absolute;
   top: -2px;
   left: -2px;
-  background: var(--gradient-color);
-  content: "";
   bottom: -2px;
   right: -2px;
+  background: var(--gradient-color);
+  content: "";
   z-index: -1;
   border-radius: 4px;
 }
@@ -57,6 +57,10 @@
 }
 
 p.para {
-  color: variable(--title-color);
+  color: var(--text-color);
   font: normal 500 16px/25px var(--roboto);
+}
+
+.font-roboto {
+  font-family:var(--roboto);
 }
