@@ -108,13 +108,13 @@
 .site-main .brand-area .first-row .col-lg-2 > .single-brand {
   border: 1px solid var(--border-color);
   /* text-align: center; */
-  padding: 2.8rem;
+  border-radius: 5%;
+  padding: 2rem;
   margin: 0 auto;
   width: 100%;
   cursor: pointer;
   transition: transform 0.4s ease;
 }
-
 
 .site-main .brand-area .first-row .col-lg-2 > .single-brand:hover {
   box-shadow: var(--box-shadow);
@@ -138,9 +138,6 @@
 .margin {
   margin-top: 1rem;
 }
-
-
-
 
 /* End Brand Area */
 /* images */
