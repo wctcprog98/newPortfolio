@@ -113,9 +113,9 @@
   justify-content: center;
 } */
 
-.site-main .brand-area .first-row .col-lg-2 > .single-brand {
+.site-main .brand-area .first-row .col-lg-2  > .single-brand {
   border: 1px solid var(--border-color);
-  /* text-align: center; */
+  text-align: center;
   border-radius: 5%;
   padding: 2rem;
   margin: 0 auto;
@@ -147,7 +147,35 @@
   margin-top: 1rem;
 }
 
-/* End Brand Area */
-/* images */
+/* Start Services Area */
+.site-main .services-area {
+  padding: 7rem 2rem;
+}
 
-/*  End Images*/
+.site-main .services-area .services-title {
+  padding: 0 14rem;
+}
+
+.site-main .services-area .services-title h1 {
+  font-size: 35px;
+}
+
+.site-main > .services-area .services {
+  background: rgba(248,252,253,0.973);
+  padding: 2rem 0;
+  width: 16rem;
+  margin: 5rem .5rem;
+  transform: box-shadow .7s ease;
+}
+
+
+.site-main > .services-area .services:hover {
+  box-shadow: var(--box-shadow);
+  border: 1px solid blue;
+}
+
+
+
+
+
+/* End Services Area */
