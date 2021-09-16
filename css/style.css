@@ -191,6 +191,7 @@
 
 /* Project Area */
 
+
 .site-main .project-area {
   padding: 4rem 0;
 }
@@ -200,6 +201,11 @@
   border: none;
   font: normal 500 16px/130px var(--roboto);
   text-transform: uppercase;
+}
+
+.button-group button:hover {
+  color: var(--primary-color);
+
 }
 
 .site-main .project-area .button-group button + button {
@@ -231,10 +237,9 @@
   left: 0;
   right: 0;
   height: 50%;
-  width: auto;
   opacity: 0;
   transition: .5s ease;
-  background-color: #008CBA;
+  background: whitesmoke;
 }
 
 .img-container:hover .overlay {
@@ -242,8 +247,7 @@
 }
 
 .text {
-  color: white;
-  font-size: 20px;
+  color: black;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -251,6 +255,11 @@
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+  width: 100%;
+  font-family: var(--roboto);
+  text-transform: uppercase;
+  /* padding: 1.7rem; */
+  color: var(--title-color);
 }
 
 .image {
@@ -259,6 +268,12 @@
   height: auto;
 }
 
+.text:hover {
+  background: var(--gradient-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
 /* image overlay effect */
 
 /* End Project Area */
