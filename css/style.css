@@ -102,15 +102,6 @@
   padding: 0.4rem 0;
 }
 
-.roundBtn {
-  background: transparent;
-  border-radius: 1.5em;
-  padding: 0;
-}
-
-.roundBtn:hover {
-  background: blue;
-}
 /* End About */
 
 /* Start Brand Area */
@@ -220,30 +211,43 @@
   filter: brightness(1.1)drop-shadow(1px 8px 30px #b1afaf);
 }
 
-.col-lg-3:hover{
+.col-lg-4:hover{
   filter: brightness(1.1)drop-shadow(1px 8px 30px #b1afaf);
 }
 
-/* image overlay effect */
+/* start image overlay effect */
 
 .img-container {
   position: relative; 
   width: 100%;
 }
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.img-container:hover img {
+  opacity: .25;
+}
+
 .overlay {
   position: absolute;
-  top: 50%;
+  top: 5%;
   bottom: 0;
   left: 0;
   right: 0;
   height: 50%;
   opacity: 0;
   transition: .5s ease;
-  background: whitesmoke;
+  /* background: whitesmoke; */
 }
+
 
 .img-container:hover .overlay {
   opacity: 1;
+ 
 }
 
 .text {
@@ -262,18 +266,113 @@
   color: var(--title-color);
 }
 
-.image {
-  display: block;
-  width: 100%;
-  height: auto;
+a {
+  text-decoration: none;
+}
+/* End image overlay effect */
+
+/* Start images div */
+.images-div img {
+  height: 22px;
+}
+/* End images div */
+
+/* Start Contact */
+.site-main .subscribe-us-area .subscribe{
+  background: url(../img/subscribe-bg.png) no-repeat;
+  padding: 5rem 0;
+  margin: 3rem auto;
 }
 
-.text:hover {
-  background: var(--gradient-color);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+.site-main .subscribe-us-area .subscribe .subscribe-title h4{
+  font: normal 700 30px/ 30px var(--roboto);
+  color: whitesmoke;
 }
-/* image overlay effect */
 
-/* End Project Area */
+.site-main .subscribe-us-area .subscribe .subscribe-title p{
+  color: whitesmoke;
+  padding: 1rem 4rem;
+}
+
+.site-main .subscribe-us-area .subscribe form .input-textbox input{
+  width: 400px;
+  padding: 1.5rem 1rem;
+  border: 1px solid whitesmoke;
+  background: transparent;
+  color: white;
+  font: normal 500 17px/20px var(--roboto);
+}
+
+
+.site-main .subscribe-us-area .subscribe form .btn-submit button{
+  background: whitesmoke;
+  color: #000;
+  padding: .7rem 2rem;
+}
+
+
+
+button a {
+  text-decoration: none;
+  color: black;
+}
+
+
+
+input[type="text"], textarea {
+  padding: 1.5em;
+  border-radius: .5em;
+  margin: .5em;
+  outline: none;
+  width: 300px;
+} 
+
+textarea {
+  width: 615px;
+  height: 150px;
+}
+
+::placeholder {
+  font-family: var(--roboto);
+  
+}
+
+#no-change:hover {
+  border: 2px solid white;
+}
+/* End Contact */
+
+/* Start Success Page */
+.success {
+  text-align: center;
+}
+
+.success a {
+  text-decoration: none;
+}
+/* End Success Page */
+/* Start Footer */
+footer.footer-area{
+  /* padding: 1rem 0; */
+  background: url(../img/footer-bg.png) no-repeat;
+}
+
+footer.footer-area .social h5{
+  font: normal 500 23px/ 30px var(--roboto);
+}
+
+footer.footer-area .social a > i{
+  padding: 1rem;
+  color: var(--border-color);
+}
+
+footer.footer-area .social a:hover > i{
+  color: var(--primary-color);
+}
+
+#footer-img {
+  width: 400px;
+  object-fit: contain;
+}
+/* End Footer */
+

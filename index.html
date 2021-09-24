@@ -28,9 +28,9 @@
     <header class="header-area">
       <div class="main-menu">
         <nav class="navbar navbar-expand-lg navbar-light">
-          <a class="navbar-brand" href="#"
-            ><img src="./img/NENYE DIEI.png" alt="logo" id="logo"
-          /></a>
+          <a class="navbar-brand" href="#">
+            <img src="img/portfolio/NENYE DIEI.png" alt="logo" id="logo">
+          </a>
           <button
             class="navbar-toggler"
             type="button"
@@ -95,12 +95,10 @@
                 >
                   Hire me
                 </button>
-                <button
-                  type="button"
-                  class="btn button secondary-button text-uppercase"
-                >
-                  resume
-                </button>
+                <a href="https://docs.google.com/document/d/1IYIHleTCFUluN0qZYoDp5amVnva_82YM-J3vo6B6eqU/edit?usp=sharing"
+                type="button"
+                class="btn button secondary-button text-uppercase">resume</a>
+
               </div>
             </div>
             <div class="col-lg-6 col-md-12 banner-image">
@@ -147,7 +145,10 @@
                 type="button"
                 class="btn button primary-button text-uppercase"
               >
-                Download CV
+              <a href="/docs/Resume_NenyeDiei(New).docx"
+              style="color: white;" id="hover"
+              >Download CV</a>
+              
               </button>
             </div>
           </div>
@@ -263,22 +264,35 @@
                 </div>
             </div>
             <div class="container services-list">
-                <div class="row">
+                <div class="row text-center">
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="services">
                             <div class="sevices-img text-center py-4">
                                 <img src="./img/services/s1.png" alt="Services-1">
                             </div>
                             <div class="card-body text-center">
-                                <h5 class="card-title text-uppercase font-roboto">Wp developer</h5>
+                                <h5 class="card-title text-uppercase font-roboto">Front-end Developer</h5>
                                 <p class="card-text text-secondary">
-                                    Some quick example text to build on the card
-                                    title and make up
-                                    the bulk of the card's content.
+                                  I like to code things from scratch, and enjoy bringing ideas to life in the browser
                                 </p>
                             </div>
                         </div>
                     </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                      <div class="services">
+                          <div class="sevices-img text-center py-4">
+                              <img src="./img/services/s3.png" alt="Services-3">
+                          </div>
+                          <div class="card-body text-center">
+                              <h5 class="card-title text-uppercase font-roboto">web design</h5>
+                              <p class="card-text text-secondary">
+                                  Some quick example text to build on the card
+                                  title and make up
+                                  the bulk of the card's content.
+                              </p>
+                          </div>
+                      </div>
+                  </div>
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="services">
                             <div class="sevices-img text-center py-4">
@@ -287,9 +301,9 @@
                             <div class="card-body text-center">
                                 <h5 class="card-title text-uppercase font-roboto">ux/ui desing</h5>
                                 <p class="card-text text-secondary">
-                                  I specialize in front-end design and love fine tuning a great layout. I have worked with Bootstrap, VueJS React, and Bulma.
+                                  I specialize in front-end design and love fine tuning a great layout. I value simple content structure, clean design patterns, and thoughtful interactions.
                                 </p>
-                            </div>
+                                </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12">
@@ -300,22 +314,7 @@
                             <div class="card-body text-center">
                                 <h5 class="card-title text-uppercase font-roboto">web design</h5>
                                 <p class="card-text text-secondary">
-                                  I am trained in HTML, JavaScript, CSS, and jQuery. I have built and deployed websites with Wordpress, Heroku, and Netlify
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="services">
-                            <div class="sevices-img text-center py-4">
-                                <img src="./img/services/s4.png" alt="Services-4">
-                            </div>
-                            <div class="card-body text-center">
-                                <h5 class="card-title text-uppercase font-roboto">seo optimize</h5>
-                                <p class="card-text text-secondary">
-                                    Some quick example text to build on the card
-                                    title and make up
-                                    the bulk of the card's content.
+                                  I value simple content structure, clean design patterns, and writing DRY and reusable code. 
                                 </p>
                             </div>
                         </div>
@@ -327,14 +326,13 @@
       <!-- ==================== End Services Area ==================== -->
 
       <!-- ==================== Begin Project area ==================== -->
-      <section class="project-area">
+      <section class="project-area" id="portfolio">
         <div class="container">
             <div class="project-title pb-5">
-                <h1 class="text-uppercase title-h1">Recently Done Project</h1>
-                <h1 class="text-uppercase title-h1">Quality Work</h1>
+                <h1 class="text-uppercase title-h1 text-center">Recent Projects</h1>
             </div>
 
-            <div class="button-group">
+            <div class="button-group text-center">
                 <button type="button" class="active" id="btn1" data-filter="*">All</button>
                 <button type="button" data-filter=".popular">Popular</button>
                 <button type="button" data-filter=".latest">Latest</button>
@@ -343,135 +341,242 @@
             </div>
 
             <div class="row grid">
-                <div class="col-lg-4 col-md-6 col-sm-12 element-item latest">
+                <div class="col-lg-4 col-md-6 col-sm-12 element-item popular">
                     <div class="our-project">
                         <div class="img img-container">
-    
-                          <a class="test-popup-link" href="https://bourneid7.github.io/project-1/">
                                 <img src="./img/portfolio/p1.jpg" alt="portfolio-1" class="img-fluid image">
                           
                               <div class="overlay">
-                                  <div class="text">View Site</div>
+                                  <div class="text">
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                                      <a href="https://bourneid7.github.io/project-1/"
+                                      type="button" class="btn button secondary-button"><h4>visit site</h4></a>
+                                  </div>
                                 </div>
                               </a>
                         </div>
-                        <div class="title py-4">
-                            <h4 class="text-uppercase">Minimul Desing</h4>
-                            <span class="text-secondary">Latest, Portfolio</span>
+                        <div class="title py-4 text-center">
+                            <h4 class="text-uppercase">How Broke Are You?</h4>
+
+                            <!-- <span class="text-secondary">ReactJS JS </span> -->
+                            <!-- start images div -->
+                            <div class="images-div">
+                              <img src="img/svg/html5-brands.svg" alt="html">
+                              <img src="img/svg/css3-original.svg" alt="css">
+                            </div>
+                            <!-- end images div -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 element-item upcoming">
+                    <div class="our-project">
+                      <div class="img img-container">
+                              <img src="./img/svg/freestocks-11SgH7U6TmI-unsplash.jpg" alt="portfolio-2" class="img-fluid image">
+                              <div class="overlay">
+                                <div class="text">
+                                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                                    <a href="https://bourneid7.github.io/project-1/"
+                                    type="button" class="btn button secondary-button"><h4>visit site</h4></a>
+                                </div>
+                              </div>
+                            </a>
+                      </div>
+                        <div class="title py-4 text-center">
+                            <h4 class="text-uppercase">NENFLIX</h4>
+                            <div class="images-div">
+                              <img src="img/svg/html5-brands.svg" alt="html">
+                              <img src="img/svg/css3-original.svg" alt="css">
+                              <img src="img/svg/react-original.svg" alt="react">
+                              <img src="img/svg/postgresql-original.svg" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12 element-item popular">
                     <div class="our-project">
                       <div class="img img-container">
-                        <a class="test-popup-link">
-                              <img src="./img/portfolio/p2.jpg" alt="portfolio-2 class="img-fluid image">
+    
+                       
+                              <img src="./img/portfolio/p3.jpg" alt="portfolio-3" class="img-fluid image">
+                        
                               <div class="overlay">
-                                <a href="https://bourneid7.github.io/project-1/">
-                                  <div class="text">
-                                    <h2>How Broke Are You?</h2>
-                                    <p>Visit Site</p>
-                                  </div>
-                                </a>
-                                
+                                <div class="text">
+                                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                                    <a href="https://bourneid7.github.io/project-1/"
+                                    type="button" class="btn button secondary-button"><h4>visit site</h4></a>
+                                </div>
                               </div>
                             </a>
-  
                       </div>
-                        <div class="title py-4">
-                            <h4 class="text-uppercase">Paint Wall</h4>
-                            <span class="text-secondary">Popular, Portfolio</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 element-item popular">
-                    <div class="our-project">
-                        <div class="img">
-                            <a class="test-popup-link" href="./img/portfolio/p3.jpg">
-                                <img src="./img/portfolio/p3.jpg" alt="portfolio-3" class="img-fluid">
-                            </a>
-                        </div>
-                        <div class="title py-4">
-                            <h4 class="text-uppercase">Female light</h4>
-                            <span class="text-secondary">Popular, Portfolio</span>
+                        <div class="title py-4 text-center">
+                            <h4 class="text-uppercase">Current events</h4>
+                            <div class="images-div">
+                              <img src="img/svg/html5-brands.svg" alt="html">
+                              <img src="img/svg/css3-original.svg" alt="css">
+                              <img src="img/svg/react-original.svg" alt="">
+                            </div>
+                
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12 element-item upcoming">
                     <div class="our-project">
-                        <div class="img">
-                            <a class="test-popup-link" href="./img/portfolio/p4.jpg">
-                                <img src="./img/portfolio/p4.jpg" alt="portfolio-4" class="img-fluid">
+                      <div class="img img-container">
+    
+                       
+                              <img src="./img/projects/2020-Tesla-Roadste-mobile.jpg" alt="portfolio-4" class="img-fluid image">
+                        
+                              <div class="overlay">
+                                <div class="text">
+                                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                                    <a href="https://bourneid7.github.io/project-1/"
+                                    type="button" class="btn button secondary-button"><h4>visit site</h4></a>
+                                </div>
+                              </div>
                             </a>
-                        </div>
-                        <div class="title py-4">
-                            <h4 class="text-uppercase">Fourth Air</h4>
-                            <span class="text-secondary">Upcoming, Portfolio</span>
+                      </div>
+                        <div class="title py-4 text-center">
+                            <h4 class="text-uppercase">tesla landing page</h4>
+                            <div class="images-div">
+                              <img src="img/svg/html5-brands.svg" alt="html">
+                              <img src="img/svg/css3-original.svg" alt="css">
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12 element-item upcoming">
                     <div class="our-project">
-                        <div class="img">
-                            <a class="test-popup-link" href="./img/portfolio/p5.jpg">
-                                <img src="./img/portfolio/p5.jpg" alt="portfolio-5" class="img-fluid">
+                      <div class="img img-container">
+    
+                              <img src="./img/portfolio/p5.jpg" alt="portfolio-5" class="img-fluid image">
+                        
+                              <div class="overlay">
+                                <div class="text">
+                                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                                    <a href="https://bourneid7.github.io/project-1/"
+                                    type="button" class="btn button secondary-button"><h4>visit site</h4></a>
+                                </div>
+                              </div>
                             </a>
-                        </div>
-                        <div class="title py-4">
-                            <h4 class="text-uppercase">Muliple fown</h4>
-                            <span class="text-secondary">Upcoming, Portfolio</span>
+                      </div>
+                        <div class="title py-4 text-center">
+                            <h4 class="text-uppercase">Dice Game</h4>
+                            <div class="images-div">
+                              <img src="img/svg/html5-brands.svg" alt="html">
+                              <img src="img/svg/css3-original.svg" alt="css">
+                              <img src="img/svg/javascript-original.svg" alt="">
+                            </div>
+              
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12 element-item following">
                     <div class="our-project">
-                        <div class="img">
-                            <a class="test-popup-link" href="./img/portfolio/p6.jpg">
-                                <img src="./img/portfolio/p6.jpg" alt="portfolio-6" class="img-fluid">
+                      <div class="img img-container">
+    
+                        <a class="test-popup-link" href="https://bourneid7.github.io/project-1/">
+                              <img src="./img/portfolio/p6.jpg" alt="portfolio-6" class="img-fluid image">
+                        
+                              <div class="overlay">
+                                <div class="text">
+                                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                                    <a href="https://bourneid7.github.io/project-1/"
+                                    type="button" class="btn button secondary-button"><h4>visit site</h4></a>
+                                </div>
+                              </div>
                             </a>
-                        </div>
-                        <div class="title py-4">
-                            <h4 class="text-uppercase">Together sign</h4>
-                            <span class="text-secondary">Following, Portfolio</span>
+                      </div>
+                        <div class="title py-4 text-center">
+                            <h4 class="text-uppercase">brewery finder</h4>
+                            <div class="images-div">
+                              <img src="img/svg/html5-brands.svg" alt="html">
+                              <img src="img/svg/css3-original.svg" alt="css">
+                              <img src="img/svg/java-original.svg" alt="java">
+                              <img src="img/svg/vuejs-original.svg" alt="vue">
+                              <img src="img/svg/nodejs-original.svg" alt="">
+                              <img src="img/svg/postgresql-original.svg" alt="">
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12 element-item following">
                     <div class="our-project">
-                        <div class="img">
-                            <a class="test-popup-link" href="./img/portfolio/p7.jpg">
-                                <img src="./img/portfolio/p7.jpg" alt="portfolio-7" class="img-fluid">
+                      <div class="img img-container">
+    
+                       
+                              <img src="./img/projects/flat-lay-notebook-with-list-desk.jpg" alt="portfolio-7" class="img-fluid image">
+                        
+                              <div class="overlay">
+                                <div class="text">
+                                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                                    <a href="https://bourneid7.github.io/project-1/"
+                                    type="button" class="btn button secondary-button"><h4>visit site</h4></a>
+                                </div>
+                              </div>
                             </a>
-                        </div>
-                        <div class="title py-4">
-                            <h4 class="text-uppercase">Green Heaven</h4>
-                            <span class="text-secondary">Following, Portfolio</span>
+                      </div>
+                        <div class="title py-4 text-center">
+                            <h4 class="text-uppercase">To Do</h4>
+                            <div class="images-div">
+                              <img src="img/svg/html5-brands.svg" alt="html">
+                              <img src="img/svg/css3-original.svg" alt="css">
+                              <img src="img/svg/javascript-original.svg" alt="">
+                              <img src="img/svg/vuejs-original.svg" alt="">
+                            </div>
+                         
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12 element-item following">
                     <div class="our-project">
-                        <div class="img">
-                            <a class="test-popup-link" href="./img/portfolio/p8.jpg">
-                                <img src="./img/portfolio/p8.jpg" alt="portfolio-8" class="img-fluid">
+                      <div class="img img-container">
+    
+                        <a class="test-popup-link" href="https://bourneid7.github.io/project-1/">
+                              <img src="./img/portfolio/p8.jpg" alt="portfolio-8" class="img-fluid image">
+                        
+                              <div class="overlay">
+                                <div class="text">
+                                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                                    <a href="https://bourneid7.github.io/project-1/"
+                                    type="button" class="btn button secondary-button"><h4>visit site</h4></a>
+                                </div>
+                              </div>
                             </a>
-                        </div>
-                        <div class="title py-4">
-                            <h4 class="text-uppercase">Fly Male</h4>
-                            <span class="text-secondary">Following, Portfolio</span>
+                      </div>
+                        <div class="title py-4 text-center">
+                            <h4 class="text-uppercase">Simple life</h4>
+                            <div class="images-div">
+                              <img src="img/svg/html5-brands.svg" alt="html">
+                              <img src="img/svg/css3-original.svg" alt="css">
+                            </div>
+                          
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12 element-item upcoming">
                     <div class="our-project">
-                        <div class="img">
-                            <a class="test-popup-link" href="./img/portfolio/p9.jpg">
-                                <img src="./img/portfolio/p9.jpg" alt="portfolio-9" class="img-fluid">
+                      <div class="img img-container">
+    
+                        <a class="test-popup-link" href="https://bourneid7.github.io/project-1/">
+                              <img src="./img/portfolio/p9.jpg" alt="portfolio-9" class="img-fluid image">
+                        
+                              <div class="overlay">
+                                <div class="text">
+                                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                                    <a href="https://bourneid7.github.io/project-1/"
+                                    type="button" class="btn button secondary-button"><h4>visit site</h4></a>
+                                </div>
+                              </div>
                             </a>
-                        </div>
-                        <div class="title py-4">
+                      </div>
+                        <div class="title py-4 text-center">
                             <h4 class="text-uppercase">Camera Lens</h4>
-                            <span class="text-secondary">Upcoming, Portfolio</span>
+                            <div class="images-div">
+                              <img src="img/svg/html5-brands.svg" alt="html">
+                              <img src="img/svg/css3-original.svg" alt="css">
+                            </div>
+                      
                         </div>
                     </div>
                 </div>
@@ -480,10 +585,70 @@
     </section>
       <!-- ==================== End Project area ==================== -->
 
+      <!-- ==================== Start Client Review Area ==================== -->
+      <!-- ==================== End Client Review Area ==================== -->
+
+      <!-- ==================== Start Contact Area ==================== -->
+      <section class="subscribe-us-area" id="contact">
+        <div class="container subscribe">
+            <div class="row">
+                <div class="col-lg-12 text-center subscribe-title">
+                    <h4 class="text-uppercase">Hello, how can I help you today?</h4>
+                   
+                </div>
+            </div>
+            <div class="text-center">
+              <form name="contact" method="POST" data-netlify="true" action="success.html">
+                <label for="first name">
+                  <input type="text" placeholder="Name">
+                </label>
+            
+                <label for="email">
+                  <input type="text" required placeholder="Email">
+                </label>
+            <div>
+              <br>
+              <label for="textarea">
+                <textarea name="message" id="message" placeholder="Message"></textarea>
+              </label>
+            </div>
+            <p>
+              <button type="submit" class="btn button secondary-button text-uppercase" id="no-change">Send</button>
+            </p>
+              </form>
+            </div>
+        </div>
+    </section>
+      <!-- ==================== End Contact Area ==================== -->
+
 
     </main>
     <!-- ==================== End Main Area ==================== -->
 
+    <!-- ==================== Start Footer Area ==================== -->
+    <footer class="footer-area">
+      <div class="container">
+          <div class="">
+              <div class="site-logo text-center py-4">
+                  <a href="#"><img src="/img/portfolio/NENYE DIEI.png" id="footer-img" alt="logo"></a>
+              </div>
+              <div class="social text-center">
+                  <h5 class="text-uppercase">Follow me</h5>
+                  <a href="https://github.com/wctcprog98/wctcprog98"><i class="fab fa-github fa-2x"></i></a>
+                  <a href="https://www.linkedin.com/in/nenyediei/"><i class="fab fa-linkedin fa-2x"></i></a>
+                  <a href="https://www.facebook.com/nenye.diei/"><i class="fab fa-facebook fa-2x"></i></a>
+  
+              </div>
+              <div class="copyrights text-center">
+                  <p class="para">
+                      Copyright ©2019 All rights reserved | This template is made with by
+                      <a href="#"><span style="color: var(--primary-color);">Nenye Diei</span></a>
+                  </p>
+              </div>
+          </div>
+      </div>
+  </footer>
+    <!-- ==================== End Footer Area ==================== -->
     <!-- Jquery file -->
     <script src="./js/jquery.3.6.0.js"></script>
     <!-- Bootstrap js file -->
